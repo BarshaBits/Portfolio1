@@ -2,13 +2,13 @@ name: Portfolio Deployment
 
 on:
   push:
-   branches:
+    branches:
       - main
- on:
+      - isha # Add any other branches you want to deploy on push
   pull_request:
     branches:
       - main
-      -isha
+      - isha # Add any other branches you want to deploy on pull request creation
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
