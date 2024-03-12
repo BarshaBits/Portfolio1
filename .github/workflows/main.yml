@@ -2,7 +2,9 @@ name: Portfolio Deployment
 
 on:
   push:
-  branches: [ main, isha ]
+   branches:
+      - main
+      - 'isha'
 
 jobs:
   build-and-deploy:
